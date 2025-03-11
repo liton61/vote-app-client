@@ -66,7 +66,7 @@ export type IReactionPayload = {
   reactionType: ReactionType;
 };
 
-const VotePoll = ({ id }: { id: string }) => {
+const VotePoll = ({ id }: { id: any }) => {
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [comment, setComment] = useState("");
   const queryClient = useQueryClient();
